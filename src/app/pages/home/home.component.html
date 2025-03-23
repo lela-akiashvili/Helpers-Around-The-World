@@ -1,0 +1,6 @@
+  <app-side-form />
+  <article class="cards">
+    @for (item of requestsSignal(); track $index) {
+    <app-card [text]="item.text" [location]="item.location" />
+    }
+  </article>

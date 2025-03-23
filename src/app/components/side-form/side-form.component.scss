@@ -1,0 +1,9 @@
+aside {
+  display: grid;
+  gap: 1rem;
+  div {
+    display: grid;
+    min-width: 30vw;
+    gap: 1rem;
+  }
+}

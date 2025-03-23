@@ -1,0 +1,17 @@
+main{
+    display: grid;
+    grid-template-columns: minmax(250px, 35%) 1fr;
+    gap: 2rem;
+    
+    // min-height: 80vh;
+    padding: 0 2rem;
+    .cards{
+        display: grid;
+        gap: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+}

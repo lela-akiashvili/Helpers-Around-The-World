@@ -1,0 +1,52 @@
+<main>
+  <aside>
+    <app-side-form />
+  </aside>
+  <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="username">Full Name</label>
+      <input type="text" id="username" formControlName="username" />
+    </div>
+    <div>
+      <label for="birthday">Birthday</label>
+      <input type="date" id="birthday" formControlName="birthday"/>
+    </div>
+    <div>
+      <label for="gender">Gender</label>
+      <select name="gender" id="gender" formControlName="gender">
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div>
+      <label for="city">City</label>
+      <input type="text" id="city" formControlName="address"/>
+    </div>
+    <div class="radio">
+      <input type="radio" id="client" name="role" value="client" formControlName="role"/>
+      <label for="client">You Need Help</label>
+    </div>
+    <div class="radio">
+      <input type="radio" id="volunter" name="role" value="volunter" formControlName="role"/>
+      <label for="volunter">You Want To Help</label>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" formControlName="email" />
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" formControlName="password" />
+    </div>
+    <div>
+      <label for="confirm-password">Confirm Password</label>
+      <input
+        type="password"
+        id="confirm-password"
+        formControlName="confirmPassword"
+      />
+    </div>
+    <button>Sign Up</button>
+  </form>
+</main>

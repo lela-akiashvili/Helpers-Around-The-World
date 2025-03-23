@@ -1,0 +1,13 @@
+main {
+  display: grid;
+  grid-template-columns: minmax(300px, 35%) 1fr;
+  gap: 2rem;
+  div,
+  form {
+    display: grid;
+    gap: 1rem;
+    .radio{
+      display: flex;
+    }
+  }
+}
